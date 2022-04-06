@@ -1,0 +1,41 @@
+.example-spacer {
+    flex: 1 1 auto;
+    padding-left: 1em;
+    font-size: 25px;
+  }
+ .buttons {
+   padding-right: 1em;
+ }
+ .icons {
+  color: #414ebe;
+ }
+ .icons:hover {
+  background-color: #6ea4f4;
+  color: white;
+ }
+ .input {
+   border-radius: 15px;
+   border-color: #414ebe;
+   font-size: 15px;
+   width: 35em;
+   padding-left: 1em;
+   color:#414ebe;
+ }
+ input::placeholder
+ {
+   color: #414ebe;
+ }
+ .input:hover, .input:active {
+  border-color: #6ea4f4;
+}
+ .image {
+  padding-left: 1em;
+ }
+ .img1 {
+   height: 40px;
+   width: 40px;
+   background-color: white;
+ }
+ .search-class {
+   padding-right: 1em;
+ }

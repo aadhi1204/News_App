@@ -1,0 +1,51 @@
+<div class="header">
+	<mat-toolbar color="primary" >
+		<!-- <div class="buttons">
+			<button mat-mini-fab  color="light" class="icons">
+				<mat-icon>dashboard</mat-icon>
+			</button> 
+		</div> -->
+		<div class="image">
+			<img src="../../assets/images/img1.svg" class="img1" alt="News App Logo">
+		</div>
+	  	<span class="example-spacer" style="padding-right: 2em;">News App</span>
+		<div class="search-class" style="padding-right:1em">
+			<input class="input" type="text" placeholder="Search for latest news articles..." autocomplete="off">
+		</div>
+	 	<div class="button" style="padding-right: 2em;">
+	  		<button mat-mini-fab color="light"  (click)="searchStatus!=searchStatus" class="icons">
+				<div>
+					<mat-icon>search</mat-icon>
+				</div>
+
+			</button>
+		</div>
+		<div class="buttons">
+	  		<button mat-mini-fab color="light"  (click)="bookmarkStatus=!bookmarkStatus"
+			  class="icons"  >
+					<div *ngIf="bookmarkStatus;else elseBlock">
+						<mat-icon>bookmark</mat-icon>
+					</div>
+				
+				<ng-template #elseBlock>
+					<div><mat-icon>bookmark_border</mat-icon></div>
+				</ng-template>
+	  		</button>
+		</div>
+		<div class="buttons">
+			<button mat-raised-button color="light" class="icons" >
+			Register</button>
+	  </div>
+	  <div class="buttons">
+		<button mat-raised-button color="light" class="icons" >
+		Login</button>
+  </div>
+	</mat-toolbar>
+</div>
+<!-- <a class="nav--menu_item_anchor" href="#" onclick="javascript:ga('send', 'event', 'menu', 'click', 'new_menu_open');">
+	<svg version="1.0" x="0px" y="0px" width="30px" height="24px" style="enable-background:new 0 0 30 24;" xml:space="preserve" class="sprite--menu-icon injected-svg" viewBox="0 0 30 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" id="BigNavIcon" data-src="/wp-content/uploads/aqua-svg-sprite/aqua-svg-general-sprite.svg#menu-icon">
+		<path style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 4; stroke-miterlimit: 10; stroke-dasharray: 22, 24; stroke-dashoffset: 0;" role="presentation" d="M4,4L26,4"></path>
+		<path style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 4; stroke-miterlimit: 10; stroke-dasharray: 22, 24; stroke-dashoffset: 0;" role="presentation" d="M4,12L26,12"></path>
+		<path style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 4; stroke-miterlimit: 10; stroke-dasharray: 22, 24; stroke-dashoffset: 0;" role="presentation" d="M4,20L26,20"></path>
+	</svg>
+	</a> -->
