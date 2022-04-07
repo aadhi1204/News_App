@@ -1,0 +1,40 @@
+<section class="login">
+<div class="login-mask">
+<div fxLayoutAlign="center center" class="container-fluid">
+    <mat-card fxFlex="25" fxLayoutGap="0px">
+    <div style="float:right; padding-right: 1em;">
+        <button mat-icon-button (click)="goHome()" class="icons">
+                 <mat-icon>clear</mat-icon>
+        </button>
+    </div>
+    <div class="form">
+        <mat-toolbar  class="heading" >Account Login</mat-toolbar>
+    </div>
+    <form  fxLayoutAlign="stretch" fxLayout="column" >
+        <div class="form-group">
+            <mat-form-field>
+                <label>Username:</label>
+                <input type="text" name="username" required placeholder="Enter Username"> 
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field>
+                <label>Password:</label>
+                <input type="password" name="password" required placeholder="Enter the Password"> 
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field>
+                <button type="submit" name="login" (click)="OnClick()" class="btn">Login</button>
+            </mat-form-field>
+        </div>
+        <div class="form-group" style="padding-bottom: 30px;">
+            <mat-form-field>
+                <a routerLink="/register" routeraLinkActive="active">create an account</a>
+            </mat-form-field>
+        </div>
+    </form>
+    </mat-card>
+</div>
+</div>
+</section>

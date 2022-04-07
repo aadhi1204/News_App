@@ -1,0 +1,52 @@
+<section class="register">
+    <div class="register-mask">
+<div fxLayoutAlign="center center" class="container-fluid">
+    <mat-card fxFlex="25" fxLayoutGap="0px">
+        <div style="float:right; padding-right: 1em;">
+            <button mat-icon-button (click)="goHome()" class="icons">
+                     <mat-icon>clear</mat-icon>
+            </button>
+        </div>
+    <div class="form">
+        <mat-toolbar  class="heading">Register User</mat-toolbar>
+    </div>
+    <form  fxLayoutAlign="stretch" fxLayout="column" >
+        <div class="form-group">
+            <mat-form-field>
+                <label>Username:</label>
+                <input type="text" name="username" required placeholder="Enter Username" [(ngModel)]="user.username"> 
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field>
+                <label>Mail:</label>
+                <input type="email" name="email" required placeholder="Enter your email" [(ngModel)]="user.email"> 
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field>
+                <label>Password:</label>
+                <input type="password" name="password" required placeholder="Enter the Password" [(ngModel)]="user.password"> 
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field>
+                <label>Confirm Password:</label>
+                <input type="password" name="confirmPassword" required placeholder="Re-enter Password" [(ngModel)]="checkPassword" > 
+            </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-form-field>
+                <button type="submit" name="register" (click)="doRegister()" class="btn">Register</button>
+            </mat-form-field>
+        </div>
+        <div  class="form-group" style="padding-bottom: 30px;">
+            <mat-form-field>
+                <a routerLink="/login" routeraLinkActive="active">already an user</a>
+            </mat-form-field>
+        </div>
+    </form>
+    </mat-card>
+</div>
+</div>
+</section>

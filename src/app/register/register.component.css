@@ -1,0 +1,62 @@
+.container-fluid
+{
+    padding-top: 5em;
+    padding-left: 10em;
+    padding-right: 10em;
+    text-align: center;
+}
+.container-fluid mat-card
+{
+    padding:0px;
+}
+.heading
+{
+    padding: 10px; 
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    color:white; 
+    background-color:#414ebe;
+}
+
+.form
+{
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+label
+{
+   padding-bottom: .5em;
+}
+.form-group
+{
+   height: 70px; 
+   text-align: center;
+} 
+button
+{
+    background-color:#414ebe;
+    color: white;
+}
+.icons {
+    color: #414ebe;
+    background-color:white;
+    height: 20px;
+    width: 20px;
+}
+.icons:hover {
+    color: #6ea4f4;
+}
+.btn:hover {
+    background-color: #6ea4f4;
+    color: white;
+}
+.register {
+    background: url('../../assets/images/img2.jpg') no-repeat;
+    height: 100%;
+    width: 100%;
+}
+.register-mask {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0,0,0,0.4);
+}
