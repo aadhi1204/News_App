@@ -49,3 +49,19 @@
 		<path style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 4; stroke-miterlimit: 10; stroke-dasharray: 22, 24; stroke-dashoffset: 0;" role="presentation" d="M4,20L26,20"></path>
 	</svg>
 	</a> -->
+<div class="container">
+	<h3>HEADLINES</h3>
+	<div class="row">
+		<div class="col-lg-3 mt-3 mb-3"
+		*ngFor="let headlines of headLinesResult">
+		
+		<div class="card">
+		<img src={{headlines.urlToImage}} width="100%" class="card-img-top"/>
+		<div class="card-body">
+			<h5 class="card-title">{{headlines.title}}</h5>
+			<a href="{{headlines.url}}" target="_blank" class="btn btn-link btn-sm">Read More</a>
+		</div>
+		</div>
+		</div>
+	</div>
+</div>
